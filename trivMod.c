@@ -3,10 +3,11 @@
  */
 
 #include <linux/module.h>
+#include <linux/kernel.h>
 
 static int __init tmod_init (void)
 {
-	printk (LOG_INFO "hello kernel\n");
+	printk (KERN_INFO "hello kernel\n");
 
 	return 0;
 }
